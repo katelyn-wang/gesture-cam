@@ -1,0 +1,9 @@
+.navbar{
+    background-color: cadetblue;
+}
+.navbar-nav a:hover{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: white;
+    background-clip: text;
+}
+

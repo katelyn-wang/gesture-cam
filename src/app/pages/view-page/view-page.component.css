@@ -1,0 +1,21 @@
+app-photo-carousel {
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    margin-top: 3%;
+    /* min-height: 100vh; */
+    min-width: 100vh;
+}
+
+.info {
+    margin-top: 3%;
+    margin-left: 3%;
+}
+
+select {
+    margin-top: 2%;
+}
+
+li {
+    padding: 0.5%;
+}

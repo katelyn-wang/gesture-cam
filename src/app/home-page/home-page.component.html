@@ -1,0 +1,62 @@
+
+<div class="container">
+  
+    <h1> Gesture Controlled Camera
+        <img src = "\assets\hands.png" alt = "hand camera" width = "60">
+    </h1>
+  
+    <div class="row">
+        <div class="col-md-6">
+            <div>
+                <img src = "\assets\lhand.png" alt = "left open hand" width = "25">
+                <img src = "\assets\rhand.png" alt = "right open hand" width = "25">
+                Use <strong>two open hands</strong> to take a picture
+            </div>
+
+            <br>
+            <webcam 
+                [trigger]="triggerObservable" [videoOptions]="videoOptions"
+                (imageCapture)="handleImage($event)"></webcam>
+
+            <br><br>
+            <h4>Controls</h4>
+            <ul>
+                <li>
+                    <img src = "\assets\lhand.png" alt = "left open hand" width = "27">
+                    <img src = "\assets\rhand.png" alt = "right open hand" width = "27">
+                    Two Open Hands - take a picture (after 3 seconds)
+                </li>
+                <li>
+                    <img src = "\assets\lpointup.png" alt = "left hand pointing" width = "30">
+                    <img src = "\assets\rpointup.png" alt = "right hand pointing" width = "30">
+                    Two Hands Pointing - view pictures
+                </li>
+            </ul>
+
+            <!-- <em>Make sure to start the hand detection for the controls to work</em> -->
+
+            <app-handtracker (onPrediction)="prediction($event)"></app-handtracker>
+            <div *ngIf="gesture">Detected Gesture: {{gesture}}</div>
+              
+            <!-- <button class="btn btn-success" (click)="triggerSnapshot();">Take A Snapshot</button> -->
+        </div>
+        <div class="col-md-6">
+
+            <div *ngIf="!isTakingPicture && captureImage == ''" id="results">Your captured image will appear here...</div>
+  
+            <div *ngIf="isTakingPicture">Taking a picture in...</div>
+            <h1 *ngIf="isTakingPicture">{{this.countdown}}</h1>
+
+            <div *ngIf="captureImage != '' && !isTakingPicture">Your captured image...</div>
+            <br>
+            <img *ngIf="!isTakingPicture" src="{{ captureImage }}" height="300px">
+            <br><br>
+            <div *ngIf="captureImage != '' && !isTakingPicture">
+                <img src = "\assets\lpointup.png" alt = "left hand pointing" width = "30">
+                    <img src = "\assets\rpointup.png" alt = "right hand pointing" width = "30">
+                <strong> Point both hands</strong> to view all photos
+            </div>
+  
+        </div>
+    </div>
+  </div>
