@@ -4,34 +4,34 @@
         <h4>Controls</h4>
       <ul>
           <li>
-            <img src = "\assets\lhand.png" alt = "left open hand" width = "30"> 
-            <img src = "\assets\rhand.png" alt = "right open hand" width = "30">
+            <img src = "..\..\assets\lhand.png" alt = "left open hand" width = "30"> 
+            <img src = "..\..\assets\rhand.png" alt = "right open hand" width = "30">
             Two Open Hands - <em>navigate to camera page</em>
-            &nbsp;<img src = "\assets\camera.png" alt = "camera icon" width = "25"> 
+            &nbsp;<img src = "..\..\assets\camera.png" alt = "camera icon" width = "25"> 
           </li>
           <div *ngIf="layout == 'Carousel'">
             <li>
-              &nbsp;&nbsp;<img src = "\assets\leftpoint.png" alt = "left point" width = "35"> 
+              &nbsp;&nbsp;<img src = "..\..\assets\leftpoint.png" alt = "left point" width = "35"> 
               &nbsp;&nbsp; Left Point - <em>go to previous photo</em>
-              &nbsp;<img src = "\assets\prev.png" alt = "prev icon" width = "25">  
+              &nbsp;<img src = "..\..\assets\prev.png" alt = "prev icon" width = "25">  
             </li>
             <li>
-              &nbsp;&nbsp;<img src = "\assets\rightpoint.png" alt = "right point" width = "35"> 
+              &nbsp;&nbsp;<img src = "..\..\assets\rightpoint.png" alt = "right point" width = "35"> 
               &nbsp;&nbsp; Right Point - <em>go to next photo</em>
-              &nbsp;<img src = "\assets\next.png" alt = "next icon" width = "25">
+              &nbsp;<img src = "..\..\assets\next.png" alt = "next icon" width = "25">
             </li>
             <li>
-              &nbsp;&nbsp;<img src = "\assets\lhand.png" alt = "left open hand" width = "35"> 
+              &nbsp;&nbsp;<img src = "..\..\assets\lhand.png" alt = "left open hand" width = "35"> 
               &nbsp;&nbsp; Hold One Open Hand - 
-              <img src = "\assets\download.png" alt = "download icon" width = "25"> 
+              <img src = "..\..\assets\download.png" alt = "download icon" width = "25"> 
               <em> download current photo</em>
               
             </li>
             <li>
-              <img src = "\assets\lfist.png" alt = "left closed hand" width = "30"> 
-              <img src = "\assets\rfist.png" alt = "right closed hand" width = "30">
+              <img src = "..\..\assets\lfist.png" alt = "left closed hand" width = "30"> 
+              <img src = "..\..\assets\rfist.png" alt = "right closed hand" width = "30">
               Hold Two Closed Hands - 
-              <img src = "\assets\delete.png" alt = "delete icon" width = "20"> 
+              <img src = "..\..\assets\delete.png" alt = "delete icon" width = "20"> 
               <em> delete current photo</em>
             </li>
           </div>
@@ -56,7 +56,7 @@
         <option [selected]="layout == 'All Photos'">All Photos</option>
       </select>
       <br>
-      <img src = "\assets\pinch.png" alt = "pinch" width = "40">  Pinch to toggle between carousel and gallery view
+      <img src = "..\..\assets\pinch.png" alt = "pinch" width = "40">  Pinch to toggle between carousel and gallery view
 
     <app-photo-carousel (activeImageSrcChange)="activeImgSrc($event)" [Photos] = "photos" *ngIf = "photos.length!=0 && layout==='Carousel'"></app-photo-carousel>
   </div>
