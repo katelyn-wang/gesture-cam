@@ -62,7 +62,7 @@ export class ViewPageComponent {
 
         // pinch to toggle between carousel and gallery view
         else if (this.gesture == "Hand Pinching"){
-          await this.delay(750);
+          await this.delay(1000);
           if (this.layout == 'Carousel'){
             this.layout = 'All Photos';
           }
