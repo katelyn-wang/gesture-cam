@@ -2,14 +2,14 @@
 <div class="container">
   
     <h1> Gesture Controlled Camera
-        <img src = "\gesture-cam\src\assets\hands.png" alt = "hand camera" width = "60">
+        <img src = "assets\hands.png" alt = "hand camera" width = "60">
     </h1>
   
     <div class="row">
         <div class="col-md-6">
             <div>
-                <img src = "\gesture-cam\src\assets\lhand.png" alt = "left open hand" width = "25">
-                <img src = "\gesture-cam\src\assets\rhand.png" alt = "right open hand" width = "25">
+                <img src = "assets\lhand.png" alt = "left open hand" width = "25">
+                <img src = "assets\rhand.png" alt = "right open hand" width = "25">
                 Use <strong>two open hands</strong> to take a picture
             </div>
 
@@ -22,13 +22,13 @@
             <h4>Controls</h4>
             <ul>
                 <li>
-                    <img src = "\gesture-cam\src\assets\lhand.png" alt = "left open hand" width = "27">
-                    <img src = "\gesture-cam\src\assets\rhand.png" alt = "right open hand" width = "27">
+                    <img src = "assets\lhand.png" alt = "left open hand" width = "27">
+                    <img src = "assets\rhand.png" alt = "right open hand" width = "27">
                     Two Open Hands - take a picture (after 3 seconds)
                 </li>
                 <li>
-                    <img src = "\gesture-cam\src\assets\lpointup.png" alt = "left hand pointing" width = "30">
-                    <img src = "\gesture-cam\src\assets\rpointup.png" alt = "right hand pointing" width = "30">
+                    <img src = "assets\lpointup.png" alt = "left hand pointing" width = "30">
+                    <img src = "assets\rpointup.png" alt = "right hand pointing" width = "30">
                     Two Hands Pointing - view pictures
                 </li>
             </ul>
@@ -52,8 +52,8 @@
             <img *ngIf="!isTakingPicture" src="{{ captureImage }}" height="300px">
             <br><br>
             <div *ngIf="captureImage != '' && !isTakingPicture">
-                <img src = "\gesture-cam\src\assets\lpointup.png" alt = "left hand pointing" width = "30">
-                    <img src = "\gesture-cam\src\assets\rpointup.png" alt = "right hand pointing" width = "30">
+                <img src = "assets\lpointup.png" alt = "left hand pointing" width = "30">
+                    <img src = "assets\rpointup.png" alt = "right hand pointing" width = "30">
                 <strong> Point both hands</strong> to view all photos
             </div>
   
