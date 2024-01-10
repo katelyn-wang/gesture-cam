@@ -56,7 +56,7 @@
         <option [selected]="layout == 'All Photos'">All Photos</option>
       </select>
       <br>
-      <img src = "..\..\assets\pinch.png" alt = "pinch" width = "40">  Pinch to toggle between carousel and gallery view
+      <img src = "\gesture-cam\src\assets\pinch.png" alt = "pinch" width = "40">  Pinch to toggle between carousel and gallery view
 
     <app-photo-carousel (activeImageSrcChange)="activeImgSrc($event)" [Photos] = "photos" *ngIf = "photos.length!=0 && layout==='Carousel'"></app-photo-carousel>
   </div>
