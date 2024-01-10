@@ -1,4 +1,7 @@
-Gesture Camera Created by Katelyn Wang and Kyle Reid in INF 133 at UCI
+### [Gesture Camera](https://katelyn-wang.github.io/gesture-cam/) Created by Katelyn Wang and Kyle Reid
+INF 133 at UCI, Fall 2023
+
+Take, view, download, and delete pictures using only hand gestures
 
 Resources
 https://www.itsolutionstuff.com/post/angular-webcam-capture-image-from-camera-exampleexample.html
