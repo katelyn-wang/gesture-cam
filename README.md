@@ -10,3 +10,4 @@ https://www.iconfinder.com/icons/3901318/focus_frame_gesture_hand_photo_camera_s
 https://www.iconfinder.com/icons/5473079/camera_capture_gesture_hand_photography_icon
 https://stackoverflow.com/questions/12645366/css-responsive-center-div
 https://angular.io/guide/inputs-outputs
+https://www.syncfusion.com/blogs/post/host-angular-app-in-github-pages.aspx
